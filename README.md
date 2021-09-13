@@ -7,7 +7,7 @@ The objective of the project is to gain practical skills in building and trainin
 The Jupyter notebooks describe the following stages of work: 
 1) сleaning the used image dataset, viewing some of them with the matplotlib library, transforming images, for example, using augmentation;
 3) building and training CNNs;
-3) improvement of the built model with the help of normalization and regularization layers and search by hyperparameters;
+3) improvement of the built model with the help of normalization and regularization layers and hyperparameter tuning;
 4) evaluation of better models on test data;
 5) transfer learning with fine-tuning.
 
