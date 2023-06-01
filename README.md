@@ -3,7 +3,7 @@
 Two Jupyter notebooks with examples of building and training convolutional neural networks (CNNs) using **TensorFlow/Keras** and **PyTorch** tools.
 ### Overview:
 ---
-The objective is to gain practical skills in building and training CNNs using TensorFlow/Keras and PyTorch tools. It deals with a task of binary classification.
+The objective was to gain practical skills in building and training CNNs using TensorFlow/Keras and PyTorch tools. It deals with a task of binary classification.
 The Jupyter notebooks describe the following stages of work: 
 1) сleaning the used image dataset, viewing some of them with the matplotlib library, transforming images, for example, using augmentation;
 3) building and training CNNs;
