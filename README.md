@@ -1,5 +1,7 @@
 ## Image classification using neural networks - Rabbit or Squirrel 
 ---
+> **Note** This repository has been archived.
+
 Two Jupyter notebooks with examples of building and training convolutional neural networks (CNNs) using **TensorFlow/Keras** and **PyTorch** tools.
 ### Overview:
 ---
