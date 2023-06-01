@@ -3,7 +3,7 @@
 Two Jupyter notebooks with examples of building and training convolutional neural networks (CNNs) using **TensorFlow/Keras** and **PyTorch** tools.
 ### Overview:
 ---
-The objective of the project is to gain practical skills in building and training CNNs using TensorFlow/Keras and PyTorch tools. It deals with a task of binary classification.
+The objective is to gain practical skills in building and training CNNs using TensorFlow/Keras and PyTorch tools. It deals with a task of binary classification.
 The Jupyter notebooks describe the following stages of work: 
 1) сleaning the used image dataset, viewing some of them with the matplotlib library, transforming images, for example, using augmentation;
 3) building and training CNNs;
@@ -11,11 +11,10 @@ The Jupyter notebooks describe the following stages of work:
 4) evaluation of better models on test data;
 5) transfer learning with fine-tuning.
 
-The idea was to describe all of the above stages using one deep learning tool, and then rewrite them to another. The first was created a notebook with the Keras library and on its basis a notebook using the Pytorch framework. Not everything has analogues. So there is no binary accuracy metric in Pytorch and we defined the function by analogy with the metric of the same name in TensorFlow/Keras. The same is true for hyperparameter search tools: in the first case, [**Keras Tuner**](https://github.com/keras-team/keras-tuner) was used, and in the second, [**Ray Tune**](https://docs.ray.io/en/latest/tune/index.html) (for more information, see [the paper](https://arxiv.org/abs/1807.05118)). The model used for transfer learning in the notebook with Pytorch is also different, but similar.
-The project is suitable for those who want to see how these deep learning tools work in practice.
+An idea was to describe all of the above stages using one deep learning tool, and then rewrite them to another. The first was created a notebook with the Keras library and on its basis a notebook using the Pytorch framework. Not everything has analogues. So there is no binary accuracy metric in Pytorch and we defined the function by analogy with the metric of the same name in TensorFlow/Keras. The same is true for hyperparameter search tools: in the first case, [**Keras Tuner**](https://github.com/keras-team/keras-tuner) was used, and in the second, [**Ray Tune**](https://docs.ray.io/en/latest/tune/index.html) (for more information, see [the paper](https://arxiv.org/abs/1807.05118)). The model used for transfer learning in the notebook with Pytorch is also different, but similar.
 ### Setup:
 ---
-The Jupyter notebooks were created in the Google Colaboratory, so it's easier to open and run them there, but first, replace or recreate all the paths for loading and saving data. The data for the project was stored on Google Drive in the following format:
+The Jupyter notebooks were created in the Google Colaboratory, so it's easier to open and run them there, but first, replace or recreate all the paths for loading and saving data. The data was stored on Google Drive in the following format:
 ```
 image_store_dir/
     train/
@@ -38,9 +37,7 @@ image_store_dir/
 The neural network models were trained using the GPU. To connect it, you need to select the GPU from the drop-down list in the Colab menu (Runtime-> Change runtime type) and save the selection.
 ### Versions of packages used:
 ---
-python 3.7.10, tensorflow 2.5.0, keras 2.5.0, keras-tuner 1.0.3, pytorch 1.9.0+cu102, torchvision 0.10.0+cu102, ray 1.4.1, matplotlib 3.2.2.
+python 3.7.10, tensorflow 2.5.0, keras 2.5.0, keras-tuner 1.0.3, torch 1.9.0+cu102, torchvision 0.10.0+cu102, ray 1.4.1, matplotlib 3.2.2.
 ### Data: 
 ---
-For the project, we took images of two classes "Rabbit" and "Squirrel" from [Open Images Dataset V6 + Extensions](https://storage.googleapis.com/openimages/web/index.html)
-### How can you help:
-If you find any bugs, issues, or have any questions or recommendations for improvement this project, please write about it.
+Images of two classes "Rabbit" and "Squirrel" from [Open Images Dataset V6 + Extensions](https://storage.googleapis.com/openimages/web/index.html) licensed under a [Attribution 2.0 Generic (CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/) license with a note (see the License section on the [Description page](https://storage.googleapis.com/openimages/web/factsfigures_v6.html) of the Dataset for more information).
